@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Female Welfare Portal</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    <header>
+        <div class="logo">&#9792; Female Welfare Portal</div>
+        <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="mainNav">&#9776; Menu</button>
+        <nav id="mainNav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="schemes.html">Schemes</a></li>
+                <li><a href="helplines.html">Helplines</a></li>
+                <li><a href="health.html">Health</a></li>
+                <li><a href="rights.html">Legal Rights</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Contact Us / Inquiry Form</h1>
+        <p>We are here to help. Submit your query and our team will respond.</p>
+
+        <div class="contact-grid">
+            <form id="inquiryForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name" aria-describedby="nameError">
+                    <span class="error-msg" id="nameError" role="alert"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="you@example.com" aria-describedby="emailError">
+                    <span class="error-msg" id="emailError" role="alert"></span>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" aria-describedby="phoneError">
+                    <span class="error-msg" id="phoneError" role="alert"></span>
+                </div>
+                <div class="form-group">
+                    <label for="category">Inquiry Category</label>
+                    <select id="category" name="category">
+                        <option value="schemes">Welfare Schemes</option>
+                        <option value="helpline">Safety Helpline</option>
+                        <option value="health">Health Support</option>
+                        <option value="legal">Legal Rights</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <p id="categoryHint" class="hint" aria-live="polite"></p>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message *</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Write your query here..." aria-describedby="messageError"></textarea>
+                    <div class="char-count" id="charCount">0 / 500</div>
+                    <span class="error-msg" id="messageError" role="alert"></span>
+                </div>
+                <button type="submit">Submit Inquiry</button>
+                <p id="formStatus" role="status"></p>
+            </form>
+
+            <aside class="info-panel">
+                <h2>Quick Helplines</h2>
+                <p><strong>Women Helpline</strong><br><a href="tel:181">181</a> (24&times;7)</p>
+                <p><strong>National Commission for Women</strong><br><a href="tel:01126942369">011-26942369</a></p>
+                <p><strong>Email Support</strong><br><a href="mailto:support@femalewelfare.org">support@femalewelfare.org</a></p>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year">2026</span> Female Welfare Portal | Capstone Project &ndash; NIET</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
